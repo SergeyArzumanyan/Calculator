@@ -1,0 +1,113 @@
+body {
+  background-color: #333;
+  color: white;
+  user-select: none;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 565px;
+  background-color: #131212;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 14px 0 14px black;
+}
+
+.brand_container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #461903;
+  box-shadow: 0 3px 0 3px #1D0A01;
+}
+
+#brand {
+  position: relative;
+  font-weight: bold;
+  left: 2em;
+  font-size: 1.1em;
+}
+
+#brand span {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+#output {
+  cursor: default;
+  color: black;
+  line-height: 60px;
+  display: block;
+  width: 390px;
+  height: 60px;
+  margin: 10px 0 10px 0;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: right;
+  text-decoration: none;
+  background-color: #233800;
+  border: 3px solid #325000;
+}
+
+.btn_container {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 5px;
+}
+
+.btn {
+  width: 60px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #463F46;
+  cursor: pointer;
+  margin-top: 9px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 4px 4px 0 0 #0D0C0C;
+}
+
+#equals {
+  width: 155px;
+  background-color: #5A0808;
+  grid-column: 3  / span 2;
+  box-shadow: 5px 5px 0 0 #230202;
+}
+
+.dark {
+  background-color: #282424;
+  box-shadow: 4px 4px 0 0 #0D0C0C;
+}
+
+.btn:active , #equals:active {
+  background-color: black;
+}
